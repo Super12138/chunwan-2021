@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DPlayer</title>
+<!--<link rel="stylesheet" href="css/DPlayer.min.css"/>-->
+<style type="text/css">
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div id="dplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script> 
+<script>
+const dp = new DPlayer({
+  container: document.getElementById('dplayer'),
+  airplay: true,
+  autoplay: false,
+  theme: '#0084FF',
+  loop: false,
+  lang: 'zh-cn',
+  screenshot: true,
+  hotkey: true,
+  preload: 'auto',
+  volume: 0.7,
+  mutex: true,
+  video: {
+    url: 'video/video.mp4',
+	thumbnails: 'thumbnails/thumbnails.jpg',
+    type: 'normal',
+  },
+  highlight: [{
+      time: 20,
+      text: '这是第 20 秒',
+    },
+    {
+      time: 120,
+      text: '这是 2 分钟',
+    },
+  ],
+  danmaku: {
+    id: 'cw-2021',
+    api: 'https://dplayer.alone88.cn/'
+  },
+});
+</script> 
+播放器无法使用？<a href="index1.html" style="color: #002CFF;">试试这个！</a>
+</body>
+</html>
