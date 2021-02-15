@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>DPlayer</title>
-<!--<link rel="stylesheet" href="css/DPlayer.min.css"/>-->
 <style type="text/css">
 a:link {
 	text-decoration: none;
@@ -23,7 +22,7 @@ a:active {
 
 <body>
 <div id="dplayer"></div>
-<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script> 
+<script src="js/DPlayer.min.js"></script> 
 <script>
 const dp = new DPlayer({
   container: document.getElementById('dplayer'),
@@ -39,7 +38,7 @@ const dp = new DPlayer({
   mutex: true,
   video: {
     url: 'video/video.mp4',
-	thumbnails: 'thumbnails/thumbnails.jpg',
+    thumbnails: 'thumbnails/thumbnails.jpg',
     type: 'normal',
   },
   highlight: [{
@@ -57,6 +56,6 @@ const dp = new DPlayer({
   },
 });
 </script> 
-播放器无法使用？<a href="index1.html" style="color: #002CFF;">试试这个！</a>
+播放器无法使用？<a href="index1.html" style="color: #002CFF;">试试这个！</a>（支持弹幕）
 </body>
 </html>

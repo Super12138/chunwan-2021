@@ -4,16 +4,31 @@
 <meta charset="utf-8">
 <title>视频</title>
 <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 <video id="player" playsinline controls>
   <source src="https://flv2.bn.netease.com/045a4cf6225160f3f1de0d5df190f1b769321dd9c77adc89c29acb689430e94bbeeed1996158b51ae4a2c0448be36a7a485479db2d9961b9b5448a341c8c8d4ab07ea5bf8ba45a575fde7044112b9f248062fa804036d1d24f2c08e1b312c1104e0263ab6c99ddcc0576047e72a5884489e2ad1126621944.mp4" type="video/mp4" />
 </video>
-<script src="https://cdn.plyr.io/3.6.4/plyr.polyfilled.js"></script> 
+<script src="js/plyr.polyfilled.js"></script> 
 <script>
   const player = new Plyr('#player');
 </script>
-播放器无法使用？<a href="index.html" style="color: #002CFF;">试试这个！</a>
+播放器无法使用？<a href="index.html" style="color: #002CFF;">试试这个！</a>（不支持弹幕）
 </body>
 </html>
